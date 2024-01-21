@@ -1,7 +1,8 @@
 from flask import Flask
 def create_app():
-    app = Flask(__name__) 
-    app.config['SECRET KEY']='i need a job.'
+    app = Flask(__name__)  
+    app.config['SECRET KEY']='key123task'
+    #registering the blueprints:
     from .views import views
     from .auth import auth
 
